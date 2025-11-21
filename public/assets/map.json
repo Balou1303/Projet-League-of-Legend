@@ -1,0 +1,80 @@
+[
+    {
+        "id": "Freljord",
+        "name": "Freljord",
+        "tagline": "Les plaines gelées et féroces.",
+        "icon": "/assets/icons/freljord_crest_icon.png", 
+        "map_position": { "top": "12%", "left": "29%" }
+    },
+    {
+        "id": "Noxus",
+        "name": "Noxus",
+        "tagline": "L'empire brutal et expansionniste.",
+        "icon": "/assets/icons/noxus_crest_icon.png", 
+        "map_position": { "top": "27%", "left": "52%" }
+    },
+    {
+        "id": "Demacia",
+        "name": "Demacia",
+        "tagline": "Le royaume de l'ordre et de la lumière.",
+        "icon": "/assets/icons/demacia_crest_icon.png", 
+        "map_position": { "top": "39%", "left": "29%" }
+    },
+    {
+        "id": "Ionia",
+        "name": "Ionia",
+        "tagline": "La première terre.",
+        "icon": "/assets/icons/iona_crest_icon.png", 
+        "map_position": { "top": "23%", "left": "79%" }
+    },
+    {
+        "id": "Piltover",
+        "name": "Piltover",
+        "tagline": "La cité du progrès.",
+        "icon": "/assets/icons/piltover_crest_icon.png", 
+        "map_position": { "top": "48%", "left": "62%" }
+    },
+
+    {
+        "id": "Zaun",
+        "name": "Zaun",
+        "tagline": "La cité du progrès.",
+        "icon": "/assets/icons/zaun_crest_icon.png", 
+        "map_position": { "top": "57%", "left": "62%" }
+    },
+    {
+        "id": "Bilgewater",
+        "name": "Bilgewater",
+        "tagline": "Le port pirate des mers bleues.",
+        "icon": "/assets/icons/bilgewater_crest_icon.png", 
+        "map_position": { "top": "59%", "left": "79%" }
+    },
+    {
+        "id": "Targon",
+        "name": "Targon",
+        "tagline": "Le mont des aspects divins.",
+        "icon": "/assets/icons/mt_targon_crest_icon.png", 
+        "map_position": { "top": "77%", "left": "40%" }
+    },
+    {
+        "id": "Shurima",
+        "name": "Shurima",
+        "tagline": "Le désert ancestral et impitoyable.",
+        "icon": "/assets/icons/shurima_crest_icon.png", 
+        "map_position": { "top": "77%", "left": "53%" }
+    },
+    {
+        "id": "Ixtal",
+        "name": "Ixtal",
+        "tagline": "La jungle élémentaire.",
+        "icon": "/assets/icons/ixtal_crest_icon.png", 
+        "map_position": { "top": "74%", "left": "70%" }
+    },
+    {
+        "id": "Iles Obscures",
+        "name": "Îles Obscures",
+        "tagline": "La terre maudite des spectres.",
+        "icon": "/assets/icons/shadow_isles_crest_icon.png", 
+        "map_position": { "top": "79%", "left": "90%" }
+    }
+]

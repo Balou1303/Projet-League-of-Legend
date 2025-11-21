@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Quel est le nom de la cité souterraine située sous Piltover, réputée pour sa pollution et sa criminalité ?",
+    "options": ["Zaun", "Les Entrailles", "Le Quartier Gris", "Sump"],
+    "answer": "Zaun"
+  },
+  {
+    "id": 2,
+    "question": "Dans quelle région se trouve la 'Fosse de l'Abîme Hurlant' (Howling Abyss), lieu d'une bataille mythique ?",
+    "options": ["Freljord", "Mont Targon", "Îles Obscures", "Demacia"],
+    "answer": "Freljord"
+  },
+  {
+    "id": 3,
+    "question": "Quel empereur de Shurima a été ressuscité et cherche à restaurer son ancien empire ?",
+    "options": ["Nasus", "Xerath", "Renekton", "Azir"],
+    "answer": "Azir"
+  },
+  {
+    "id": 4,
+    "question": "Quel est le matériau unique et magique que le royaume de Demacia utilise pour annuler la magie ?",
+    "options": ["Hextech", "Cristal de Glace", "Pétricite", "Acier Runique"],
+    "answer": "Pétricite"
+  },
+  {
+    "id": 5,
+    "question": "Quelle est la région d'origine de Gangplank et Miss Fortune, connue pour ses pirates et ses monstres marins ?",
+    "options": ["Ixtal", "Ionia", "Bilgewater", "Îles Obscures"],
+    "answer": "Bilgewater"
+  },
+  {
+    "id": 6,
+    "question": "Quel champion est considéré comme le 'Gardien de la Lumière' et est souvent associé à la région de Demacia ?",
+    "options": ["Lucian", "Lux", "Garen", "Jarvan IV"],
+    "answer": "Garen"
+  },
+  {
+    "id": 7,
+    "question": "Les 'Vastayas' (êtres hybrides mi-humains, mi-animaux) sont principalement originaires de quelle région ?",
+    "options": ["Ixtal", "Ionia", "Mont Targon", "Shurima"],
+    "answer": "Ionia"
+  },
+  {
+    "id": 8,
+    "question": "Quel nom porte la forteresse massive qui est le centre politique et militaire de Noxus ?",
+    "options": ["La Citadelle Noire", "L'Immortal Bastion", "La Main de Noxus", "La Fierté Éternelle"],
+    "answer": "L'Immortal Bastion"
+  },
+  {
+    "id": 9,
+    "question": "La 'Taverne de l'Œil de la Baleine' (The Slaughter Docks) est un lieu emblématique de quelle région ?",
+    "options": ["Bilgewater", "Zaun", "Noxus", "Freljord"],
+    "answer": "Bilgewater"
+  },
+  {
+    "id": 10,
+    "question": "Quel lieu, flottant dans les airs, est la dernière ville bastion du Néant sur Runeterra ?",
+    "options": ["Ixtal", "La Toundra Glacée", "Icathia", "La Faille de l'Invocateur"],
+    "answer": "Icathia"
+  }
+]
