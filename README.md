@@ -1,16 +1,69 @@
-# React + Vite
+# Projet League of Legends — Encyclopédie de Runeterra
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web qui permet d'explorer l'univers de League of Legends : une carte interactive de Runeterra, les régions et leur histoire, les fiches des champions et un quiz pour tester ses connaissances.
 
-Currently, two official plugins are available:
+## Contexte
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projet solo réalisé pendant ma formation de **Développeur Web et Web Mobile (DWWM)**, dans le cadre d'un exercice pour mettre en pratique React, le routing et la consommation d'une API externe.
 
-## React Compiler
+## Stack technique
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework** : React 19, Vite 7
+- **Routing** : React Router DOM 7
+- **Requêtes HTTP** : Axios
+- **UI** : Bootstrap 5 / React-Bootstrap
+- **Données** : API publique **Data Dragon** de Riot Games (champions, en français) + fichiers JSON locaux (régions, carte, quiz)
+- **Qualité de code** : ESLint
 
-## Expanding the ESLint configuration
+## Fonctionnalités principales
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Carte interactive de Runeterra** (page d'accueil) : les blasons des régions sont placés sur la carte et mènent à la page de chaque région, avec une modale d'accueil
+- **Régions** : liste des 13 régions, puis page de détail avec illustration, légende de la région et champions qui en sont originaires
+- **Champions** : liste de tous les champions récupérés depuis Data Dragon, puis fiche détaillée (titre, rôles, illustration, statistiques d'attaque / défense / magie / difficulté, histoire, conseils de jeu)
+- **Quiz** : 10 questions sur l'univers du jeu, avec retour visuel immédiat (bonne / mauvaise réponse), calcul du score et possibilité de recommencer
+
+## Architecture / choix techniques notables
+
+- **Pages et composants séparés** : `Pages/` pour les vues associées aux routes, `Components/` pour les éléments réutilisables (`NavBar`, `ChampionsCard`, `RegionsCard`)
+- **Un service par ressource** (`ChampionsService`, `RegionsService`, `mainPageService`, `quizzService`) qui regroupe les appels Axios, pour que les composants ne contiennent pas d'URL en dur
+- **Routes dynamiques** (`/championDetails/:id`, `/regionDetails/:id`) avec `useParams` pour charger le bon champion ou la bonne région
+- **Mélange de sources de données** : les champions viennent de l'API Data Dragon, tandis que les données absentes de l'API (régions, positions sur la carte, questions du quiz) sont stockées dans des fichiers JSON servis depuis `public/assets`
+- **Réutilisation de `ChampionsCard`** à la fois dans la liste des champions et dans la page de détail d'une région
+- **Carte positionnée en pourcentages** : chaque région a des coordonnées `top` / `left` en % dans `map.json`, ce qui garde les blasons à la bonne place quelle que soit la largeur de l'écran
+
+## Installation et lancement en local
+
+### Prérequis
+- Node.js 18+
+
+### Étapes
+
+1. Installer les dépendances :
+   ```bash
+   npm install
+   ```
+
+2. Lancer le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+
+3. Ouvrir l'URL indiquée par Vite (par défaut `http://localhost:5173`).
+
+Aucune clé d'API ni fichier `.env` n'est nécessaire : Data Dragon est une API publique.
+
+## Structure du projet
+
+```
+src/
+├── Components/   # NavBar, cartes champion et région
+├── Pages/        # Accueil (carte), Régions, Champions, Quiz et pages de détail
+├── Services/     # Appels Axios (Data Dragon et fichiers JSON locaux)
+├── App.jsx       # Déclaration des routes
+└── main.jsx
+public/assets/    # Images, blasons et données JSON (régions, carte, quiz)
+```
+
+## Mentions
+
+Projet non officiel réalisé dans un but d'apprentissage. League of Legends, Runeterra ainsi que les noms, images et textes associés sont la propriété de Riot Games.
